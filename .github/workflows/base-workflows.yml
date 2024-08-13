@@ -8,7 +8,4 @@ on:
 jobs:
   assignes:
     uses: devhatt/workflows/.github/workflows/auto-assign.yml@main
-    with:
-      repository: ${{github.repository}}
-      pr-number: ${{github.event.pull_request.number}}
     secrets: inherit
