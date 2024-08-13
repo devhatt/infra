@@ -1,0 +1,13 @@
+name: Base Actions
+
+on:
+  issue_comment:
+    types: [created]
+  pull_request:
+
+jobs:
+  assignes:
+    uses: devhatt/workflows/.github/workflows/auto-assign.yml@main
+    with:
+      repository: ${{github.repository}}
+      pr_number: ${{github.event.pull_request.number}}
