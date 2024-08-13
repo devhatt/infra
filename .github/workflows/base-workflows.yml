@@ -9,3 +9,10 @@ jobs:
   assignes:
     uses: devhatt/workflows/.github/workflows/auto-assign.yml@main
     secrets: inherit
+
+  teste:
+    runs-on: ubuntu-latest
+    steps:
+      - name: JSJSJS
+        run: |
+          echo "MIAPIKA"
