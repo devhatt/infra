@@ -11,6 +11,7 @@ jobs:
     with:
       repository: ${{github.repository}}
       pr-number: ${{github.event.pull_request.number}}
+    secrets: inherit
 
   teste:
     runs-on: ubunt-latest
