@@ -11,3 +11,10 @@ jobs:
     with:
       repository: ${{github.repository}}
       pr-number: ${{github.event.pull_request.number}}
+
+  teste:
+    runs-on: ubunt-latest
+    steps:
+      - name: Action propria imprime secret
+        run: |
+          echo ${{secrets.PERSONAL_ACCESS_TOKEN}}
