@@ -10,4 +10,4 @@ jobs:
     uses: devhatt/workflows/.github/workflows/auto-assign.yml@main
     with:
       repository: ${{github.repository}}
-      pr_number: ${{github.event.pull_request.number}}
+      pr-number: ${{github.event.pull_request.number}}
